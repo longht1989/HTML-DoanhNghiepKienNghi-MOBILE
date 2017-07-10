@@ -1,0 +1,81 @@
+[class*='sprites-'] {
+    cursor: pointer;
+    display: inline-block;
+    background: url(../images/kiennghi-sprites.png) no-repeat;
+    background-size: 500px 500px;
+}
+
+.sprites-menu {
+    background-position: 0px 0px;
+    width: 24px;
+    height: 16px;
+    &.active {
+        background-position-y: -50px;
+    }
+}
+
+.sprites-phone {
+    background-position: -100px 0px;
+    width: 14px;
+    height: 14px;
+}
+
+.sprites-map-marker {
+    background-position: -50px 0px;
+    width: 12px;
+    height: 14px;
+}
+
+.sprites-envelop {
+    background-position: -150px 0px;
+    width: 14px;
+    height: 10px;
+}
+
+.sprites-red-comment {
+    background-position: -100px -50px;
+    width: 22px;
+    height: 22px;
+}
+
+.sprites-comment {
+    background-position: -50px -50px;
+    width: 18px;
+    height: 16px;
+}
+
+.sprites-clock {
+    background-position: -250px 0px;
+    width: 15px;
+    height: 15px;
+}
+
+.sprites-facebook {
+    background-position: -300px 0px;
+    width: 24px;
+    height: 24px;
+}
+
+.sprites-googleplus {
+    background-position: -350px 0px;
+    width: 24px;
+    height: 24px;
+}
+
+.sprites-twitter {
+    background-position: -400px 0px;
+    width: 24px;
+    height: 24px;
+}
+
+.sprites-mail {
+    background-position: -450px 0px;
+    width: 24px;
+    height: 24px;
+}
+
+.sprites-fileattach {
+    background-position: -200px 0px;
+    width: 18px;
+    height: 18px;
+}

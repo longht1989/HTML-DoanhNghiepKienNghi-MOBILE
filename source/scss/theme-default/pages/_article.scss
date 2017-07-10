@@ -1,0 +1,194 @@
+/* article style */
+
+// article breadcrumb
+.main-article {
+    @include clearfix;
+    position: relative;
+    padding: 0 8px;
+    .article-hdr {
+        // header article 
+        margin-bottom: 12px;
+        .article-title {
+            @include font-size(22, 30);
+            margin-bottom: 8px;
+            font-weight: bold;
+            font-family: $font-family-roboto;
+        }
+        .name {
+            @include font-size(14, 19);
+            margin-bottom: 4px;
+            color: #888;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .meta {
+            @include font-size(14, 19);
+            color: #888;
+            .sprites-clock {
+                vertical-align: text-top;
+            }
+        }
+        .summary {
+            font-size: 14px;
+            font-size: 1.4rem;
+            line-height: 1.42857143em;
+            margin-bottom: 8px;
+            font-weight: bold;
+            a {
+                color: $brand-primary;
+            }
+        }
+    }
+    .bottom-share {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        .title {
+            text-transform: uppercase;
+            padding-bottom: 5px;
+            font-weight: bold;
+        }
+        .social {
+            display: inline;
+            ul {
+                li {
+                    float: left;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    .article-content {
+        //main article content
+        .box {
+            padding: 8px;
+            margin-bottom: 12px;
+            -webkit-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .16);
+            box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .16);
+            background-color: #FFF;
+            border-left: 3px solid #e0e0e0;
+            .box-title {
+                text-transform: uppercase;
+                margin-bottom: 4px;
+                @include font-size(14, 19);
+                font-weight: bold;
+                color: $brand-success;
+            }
+            .file-attach {
+                margin-top: 8px;
+                padding-top: 4px;
+                border-top: 1px solid #eee;
+                .sprites-fileattach {
+                    position: relative;
+                    top: 2px;
+                }
+                a {
+                    color: $brand-primary;
+                    @include haf() {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            &.box-process {
+                border-left: none;
+                border: 1px solid #bbd9af;
+                background-color: #dff0d8;
+                .box-title {
+                    color: #111;
+                }
+            }
+            &.box-answer {
+                border-left: none;
+                border-right: 3px solid #eddfa2;
+                background-color: #fcf7e1;
+                .box-title {
+                    text-align: right;
+                    color: black;
+                    text-transform: none;
+                    .department {
+                        color: $brand-success;
+                        margin-right: 3px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+        .zone {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .article-vote-box {
+            .btn {
+                width: 100%;
+            }
+            .vote-count {
+                font-weight: bold;
+                margin-top: 3px;
+            }
+        }
+        /* table with */
+        table {
+            max-width: 100% !important;
+        }
+        /* -------------- */
+        .comment-box {
+            margin-bottom: 16px;
+            .comment-box-title {
+                margin-bottom: 8px;
+                font-family: $font-family-roboto;
+                @include font-size(14, 19);
+                text-transform: uppercase;
+                font-weight: bold;
+                .sprites-comment {
+                    position: relative;
+                    top: 2px;
+                }
+            }
+            .comment-listing {
+                margin-bottom: 12px;
+                li {
+                    margin-bottom: 8px;
+                    @include lastchild();
+                }
+                .comment-header {
+                    margin-bottom: 4px;
+                    @include clearfix;
+                    .avatar {
+                        float: left;
+                        margin-right: 4px;
+                    }
+                    .name {
+                        font-weight: bold;
+                    }
+                    time {
+                        color: #999;
+                        &::before {
+                            content: '-';
+                            padding: 0 4px;
+                        }
+                    }
+                }
+                .comment-content {
+                    padding-left: 24px;
+                }
+            }
+        }
+    }
+}
+
+.answer {
+    &__react-wrap {
+        text-align: right;
+        margin-top: 10px;
+    }
+    &__react {
+        display: inline-block;
+        margin-left: 10px;
+        text-align: center;
+        .vote-count {
+            margin-top: 5px;
+        }
+        .btn {
+            border-radius: 0;
+        }
+    }
+}

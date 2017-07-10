@@ -1,0 +1,36 @@
+/* ====================================
+   Customize Pagination
+   ==================================== */
+
+.pagination {
+    margin-top: 0;
+    @include clearfix;
+    text-align: center;
+    display: block;
+    @include font-size(12, 25);
+    font-weight: bold;
+    > li {
+        display: inline-block;
+        > a,
+        > span {
+            // color: #777;
+            border: none;
+            background: none;
+            margin-right: 8px;
+        }
+        &.active {
+            >a {
+                background-color: $brand-success;
+            }
+            @include haf() {
+                >a {
+                    background-color: $brand-success;
+                }
+            }
+        }
+    }
+    .category-page & {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

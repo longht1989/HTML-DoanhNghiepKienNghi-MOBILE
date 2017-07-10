@@ -1,0 +1,30 @@
+/* ====================================
+   Footer's style
+   ==================================== */
+
+#site-footer {
+    background-color: #FFF;
+    @include clearfix;
+    padding: 12px 8px;
+    border-top: 2px solid $brand-primary;
+    @include font-size(12, 19);
+    .footer-title {
+        @include font-size(14, 19);
+        text-transform: uppercase;
+    }
+    >* {
+        margin-bottom: 8px;
+        @include lastchild();
+    }
+    [class*='sprites-'] {
+        position: relative;
+        top: 2px;
+        margin-right: 4px;
+    }
+    a {
+        color: $brand-primary;
+        @include haf() {
+            text-decoration: underline;
+        }
+    }
+}

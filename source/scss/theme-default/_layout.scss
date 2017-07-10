@@ -1,0 +1,18 @@
+/* site-wrap */
+
+
+/* wrap for large screen */
+
+@media screen and (min-width: 768px) {
+    html {
+        background-color: #f9f9f9;
+    }
+    body {
+        max-width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #FFF;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

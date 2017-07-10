@@ -1,0 +1,36 @@
+/* site header style */
+
+#site-header {
+    z-index: 3;
+    position: relative;
+    margin-bottom: 24px;
+    padding: 12px 8px;
+    border-bottom: 2px solid $brand-primary;
+    background-color: white;
+    .sprites-menu {
+        position: absolute;
+        top: 12px;
+        right: 8px;
+    }
+    .cate-list {
+        display: none;
+        position: absolute;
+        top: calc(100% + 2px);
+        left: 0;
+        right: 0;
+        padding: 12px 8px;
+        border-bottom: 1px solid $brand-primary;
+        background-color: #FFF;
+        z-index: 2;
+        li {
+            margin-bottom: 5px;
+            @include font-size(14, 19);
+            font-weight: bold;
+            .fa {
+                margin-right: 3px;
+                font-size: 0.8em;
+            }
+            @include lastchild();
+        }
+    }
+}

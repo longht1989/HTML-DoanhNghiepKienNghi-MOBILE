@@ -1,0 +1,103 @@
+/* style for story */
+
+.story {
+    @include clearfix;
+    .thumb {
+        margin-bottom: 7px;
+    }
+    .title {
+        @include font-size(14, 19);
+        margin-top: 0;
+        margin-bottom: 5px;
+        font-weight: normal;
+        a {
+            color: #000;
+            display: block;
+        }
+        time {
+            color: #818283;
+            font-weight: normal;
+            font-size: .9em;
+            margin-left: 3px;
+        }
+        // [class*='sprites-'] {
+        //     margin-left: 5px;
+        // }
+        .sprites-comment {
+            margin-right: 3px;
+        }
+        .comment-count {
+            color: $brand-primary;
+            font-weight: normal;
+            font-size: .9em;
+        }
+        &:hover {
+            a {
+                color: $brand-primary;
+            }
+        }
+    }
+    .meta {
+        color: #999;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    .summary {
+        @extend .meta;
+        color: #555;
+    }
+    
+    // story in zone 
+    .zone & {
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+        &:last-of-type {
+            padding-bottom: 0;
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+    }
+    .extend-info {
+        display: none;
+        .meta {
+            margin-bottom: 4px;
+            @include clearfix;
+            @include font-size(12, 17);
+            .thumb {
+                float: left;
+                margin-right: 8px;
+            }
+            .name {
+                @include font-size(12, 17);
+                color: #333;
+                text-transform: uppercase;
+                margin-bottom: 4px;
+            }
+            .time {
+                color: #999;
+                .sprites-clock{
+                    position: relative;
+                    top: 3px;
+                }
+            }
+        }
+    }
+    &.full-info {
+        .title {
+            @include font-size(16, 22);
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .extend-info {
+            display: block;
+        }
+    }
+    .listing-box-story & {
+        background-color: #fff;
+        -webkit-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .16);
+        box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .16);
+        padding: 8px;
+        margin-bottom: 16px;
+    }
+}
