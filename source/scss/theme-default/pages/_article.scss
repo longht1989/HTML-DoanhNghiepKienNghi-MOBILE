@@ -111,6 +111,25 @@
                     }
                 }
             }
+            &.box-pending {
+                .pending__title {
+                    margin-bottom: 10px;
+                }
+                .pending__content {
+                    p {
+                        background: url(../images/bullet.png) 0 4px no-repeat;
+                        padding: 0 0 5px 12px;
+                        position: relative;
+                        &::before {
+                            content: "•";
+                            display: inline;
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                        }
+                    }
+                }
+            }
         }
         .zone {
             margin-left: 0;

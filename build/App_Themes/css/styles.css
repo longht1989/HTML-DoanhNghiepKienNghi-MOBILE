@@ -6303,6 +6303,18 @@ h5 {
             color: #b00600;
             margin-right: 3px;
             text-transform: uppercase; }
+      .main-article .article-content .box.box-pending .pending__title {
+        margin-bottom: 10px; }
+      .main-article .article-content .box.box-pending .pending__content p {
+        background: url(../images/bullet.png) 0 4px no-repeat;
+        padding: 0 0 5px 12px;
+        position: relative; }
+        .main-article .article-content .box.box-pending .pending__content p::before {
+          content: "•";
+          display: inline;
+          position: absolute;
+          top: 0px;
+          left: 0px; }
     .main-article .article-content .zone {
       margin-left: 0;
       margin-right: 0; }
